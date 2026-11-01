@@ -1,37 +1,63 @@
-# Sizwe Chatbot  
+# Sizwe: Multilingual Mental Health Chatbot
 
-Sizwe is a mental health chatbot designed to provide support and conversations in multiple languages. This project is still under development, but others are welcome to explore and learn from it.  
+Sizwe is a multilingual chatbot that supports mental health conversations for African-language speakers. It was built in three days at the **MAISH Hackathon 2024**, where it won **3rd place**: two days of building and a presentation day, with no budget and no paid NLP or AI APIs.
 
-## "Sizwe - Mental Health Chatbot Prototype" -> This is the prototype
+**Live demo:** [N/A]
 
-## 🚀 Features  
-✅ Multi-language support for diverse users  
-✅ Mental health-focused responses  
-✅ Simple and user-friendly interface  
-✅ AI-driven conversation flow  
+![Sizwe chatbot screenshot](Usizo.png)
 
+> **Important:** Sizwe is a student prototype. It is not a therapist and does not give medical advice or diagnoses. If you or someone you know is in crisis, please contact a qualified professional or a local helpline.
+>
 
-## 🌟 Usage  
-1. Open the chatbot interface.  
-2. Start a conversation in your preferred language.  
-3. Receive mental health guidance and responses.  
+## Features
 
-## 🛠️ Technologies Used  
-- **HTML** – Structure  
-- **CSS** – Styling  
-- **JavaScript** – Core functionality  
+- **Multiple languages:** replies in the language the user writes in (currently English and isiZulu: [update this list to match your code]).
+- **Switch languages mid-conversation:** the chatbot notices when the user changes language and answers in the new one.
+- **Rule-based language detection:** a custom JavaScript engine detects the language and maps it to responses. It uses no paid NLP or AI services.
+- **Structured conversation flows:** supportive, mental-health-focused conversation paths.
+- **Fallback replies:** a graceful response when the chatbot does not recognise the input.
+- **Simple interface:** built with plain HTML, CSS and JavaScript.
 
-## 🚧 Future Improvements  
-- [ ] Integrate ChatGPT for smarter responses  
-- [ ] Improve language support and accuracy  
-- [ ] Add user personalization features  
+## How it works
 
-## 🙌 Contributing  
-Feel free to explore the project and suggest improvements. 
+1. The user types a message.
+2. The language detection logic checks the message against known words and phrases for each supported language.
+3. The chatbot picks the matching conversation flow and replies in the detected language.
+4. If nothing matches, it uses a fallback reply and invites the user to try again.
 
-## 📄 License  
-This project is licensed under the **MIT License**.  
+## Run it locally
 
----  
+No installation is needed.
 
-🚨 **Note:** This project is not final and is still under active development. Contributions and feedback are highly encouraged!  
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/NeoMudau/Sizwe-Mental-health-chatbot.git
+   ```
+2. Open `index.html` in your browser.
+
+The prototype files are in the `Sizwe - Mental Health Chatbot Prototype` folder.
+
+## Built with
+
+- **HTML:** structure
+- **CSS:** styling
+- **JavaScript:** language detection, conversation logic and interface behaviour
+
+## Project status
+
+This is a hackathon prototype. It is not a finished product, but it works end to end and you are welcome to explore it and learn from it.
+
+## Possible next steps
+
+- [ ] Add more African languages
+- [ ] Improve language detection accuracy
+- [ ] Add more conversation flows
+- [ ] Explore optional AI-assisted replies, with proper safety checks for mental health topics
+
+## Contributing
+
+Feedback and suggestions are welcome. Open an issue or a pull request.
+
+## License
+
+This project is licensed under the **MIT License**.
