@@ -2,6 +2,7 @@
 
 Sizwe is a multilingual chatbot that supports mental health conversations for African-language speakers. It was built in three days at the **MAISH Hackathon 2024**, where it won **3rd place**: two days of building and a presentation day, with no budget and no paid NLP or AI APIs.
 
+<<<<<<< HEAD
 **Live demo:** [add your GitHub Pages link here]
 
 > **Important:** Sizwe is a student prototype. It is not a therapist and does not give medical advice or diagnoses. If you or someone you know is in crisis, please contact a qualified professional or a local helpline.
@@ -47,6 +48,35 @@ Sizwe is a multilingual chatbot that supports mental health conversations for Af
 
 No installation is needed.
 
+=======
+**Live demo:** [N/A]
+
+![Sizwe chatbot screenshot](Usizo.png)
+
+> **Important:** Sizwe is a student prototype. It is not a therapist and does not give medical advice or diagnoses. If you or someone you know is in crisis, please contact a qualified professional or a local helpline.
+>
+
+## Features
+
+- **Multiple languages:** replies in the language the user writes in (currently English and isiZulu: [update this list to match your code]).
+- **Switch languages mid-conversation:** the chatbot notices when the user changes language and answers in the new one.
+- **Rule-based language detection:** a custom JavaScript engine detects the language and maps it to responses. It uses no paid NLP or AI services.
+- **Structured conversation flows:** supportive, mental-health-focused conversation paths.
+- **Fallback replies:** a graceful response when the chatbot does not recognise the input.
+- **Simple interface:** built with plain HTML, CSS and JavaScript.
+
+## How it works
+
+1. The user types a message.
+2. The language detection logic checks the message against known words and phrases for each supported language.
+3. The chatbot picks the matching conversation flow and replies in the detected language.
+4. If nothing matches, it uses a fallback reply and invites the user to try again.
+
+## Run it locally
+
+No installation is needed.
+
+>>>>>>> 413119ee05b438105f5c181d6ec5ba8a528b9eb4
 1. Clone the repository:
    ```bash
    git clone https://github.com/NeoMudau/Sizwe-Mental-health-chatbot.git
